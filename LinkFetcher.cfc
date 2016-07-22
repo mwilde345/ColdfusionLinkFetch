@@ -23,7 +23,7 @@ function getHyperlinks(spreadsheet){
 			var cell = createObject("java","org.apache.poi.ss.usermodel.Cell");
 			cell = cellTraverse.next();
 			var df = createObject("java","org.apache.poi.ss.usermodel.DataFormatter").init();
-			var theLink = createObject("java","org.apache.poi.common.usermodel.Hyperlink
+			var theLink = createObject("java","org.apache.poi.common.usermodel.Hyperlink");
 			theLink = cell.getHyperlink();
 			if(isDefined("theLink")){
 				rowStruct["col_"&colCounter] = theLink.getAddress();
