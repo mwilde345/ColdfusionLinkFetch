@@ -1,2 +1,2 @@
 # ColdfusionLinkFetch
-Extract hyperlinks from a spreadsheet into a row of structs
+Extract hyperlinks from a spreadsheet into an array of structs
