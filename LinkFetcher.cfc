@@ -8,6 +8,8 @@ function getHyperlinks(spreadsheet){
 	var poiSpreadsheet = workbook.getSheetAt(0);
 	var rowIterator = createObject("java","java.util.Iterator");
 	rowIterator = poiSpreadsheet.iterator();
+
+////############## ROW ITERATION ####################//
 	while(rowIterator.hasNext()){
 		var row = createObject("java","org.apache.poi.ss.usermodel.Row");
 		row = rowIterator.next();
@@ -15,6 +17,8 @@ function getHyperlinks(spreadsheet){
 		cellTraverse = row.cellIterator();
 		var colCounter = 1;
 		var rowStruct = structNew();
+
+////############## CELL ITERATION ####################//
 		while(cellTraverse.hasNext()){
 			var cell = createObject("java","org.apache.poi.ss.usermodel.Cell");
 			cell = cellTraverse.next();
